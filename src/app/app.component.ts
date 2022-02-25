@@ -5,10 +5,23 @@ import * as Servizi from './store.service';
 @Component({
   selector: 'app-root',
   template: `
+
     <app-navbar></app-navbar>
-    <router-outlet></router-outlet>
-  `,
-  styles: [],
+    <div id="sfondo">
+      <router-outlet></router-outlet>
+    </div>
+    <app-footer></app-footer>
+
+   `,
+  styles: [
+    `
+    #sfondo {
+      background-image: url("../assets/img/sfondo.jpg");
+      background-position: center;
+      text-align: center;
+    }
+    `
+  ],
 })
 
 export class AppComponent {

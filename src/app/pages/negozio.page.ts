@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import * as Servizi from '../store.service';
 import { Articolo } from '../models/articolo';
 import { HttpClient } from '@angular/common/http';
-import { Subscriber } from 'rxjs';
+
+
 @Component({
   template: `
 
@@ -20,11 +21,12 @@ import { Subscriber } from 'rxjs';
   styles: [
     `
       .mb-4{
-        background-color: #faf0e6;
+        background-color:rgba(184, 184, 192, 0.7);
         border-radius:7px;
         box-shadow: 2px 2px 4px grey;
         max-width: 800px;
         margin-left: 10px;
+        margin: 0 auto;
       };
     `
   ],

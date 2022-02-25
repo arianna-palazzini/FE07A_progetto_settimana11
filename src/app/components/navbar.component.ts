@@ -5,7 +5,7 @@ import { carrello } from '../store.service';
   template: `
     <nav class="navbar navbar-expand navbar-light bg-light">
   <div class="container-fluid">
-    <div class="collapse navbar-collapse" id="navbarNav">
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
         <a class="nav-link h5" [routerLink]="['/']" routerLinkActive="active">Negozio</a>

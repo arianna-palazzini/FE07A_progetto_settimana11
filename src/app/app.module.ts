@@ -5,10 +5,11 @@ import { AppComponent } from './app.component';
 import { NegozioPage } from './pages/negozio.page';
 import { CarrelloPage } from './pages/carrello.page';
 import { CarrelloDetailsPage } from './pages/carrello-details.page';
-import { NavbarComponent } from './navbar/navbar.component';
+import { NavbarComponent } from './components/navbar.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import {FooterComponent} from './components/footer.component';
 
 const routes: Route[] = [
   {
@@ -30,7 +31,8 @@ const routes: Route[] = [
     NegozioPage,
     CarrelloPage,
     CarrelloDetailsPage,
-    NavbarComponent
+    NavbarComponent,
+    FooterComponent
   ],
   imports: [BrowserModule, FormsModule, HttpClientModule, AppRoutingModule, RouterModule.forRoot(routes)],
   providers: [],
